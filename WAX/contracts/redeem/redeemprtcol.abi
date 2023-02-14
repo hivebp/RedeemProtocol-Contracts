@@ -1,0 +1,197 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT ",
+    "version": "eosio::abi/1.2",
+    "types": [],
+    "structs": [
+        {
+            "name": "accept",
+            "base": "",
+            "fields": [
+                {
+                    "name": "authorized_account",
+                    "type": "name"
+                },
+                {
+                    "name": "collection_name",
+                    "type": "name"
+                },
+                {
+                    "name": "asset_id",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "config_s",
+            "base": "",
+            "fields": [
+                {
+                    "name": "redemption_counter",
+                    "type": "uint64"
+                },
+                {
+                    "name": "token_receiver",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "init",
+            "base": "",
+            "fields": []
+        },
+        {
+            "name": "logredeem",
+            "base": "",
+            "fields": [
+                {
+                    "name": "asset_id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "redemption_id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "collection_name",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "markpaid",
+            "base": "",
+            "fields": [
+                {
+                    "name": "asset_owner",
+                    "type": "name"
+                },
+                {
+                    "name": "asset_id",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "markreceived",
+            "base": "",
+            "fields": [
+                {
+                    "name": "asset_owner",
+                    "type": "name"
+                },
+                {
+                    "name": "asset_id",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "markshipped",
+            "base": "",
+            "fields": [
+                {
+                    "name": "authorized_account",
+                    "type": "name"
+                },
+                {
+                    "name": "collection_name",
+                    "type": "name"
+                },
+                {
+                    "name": "asset_id",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "redemption_s",
+            "base": "",
+            "fields": [
+                {
+                    "name": "asset_id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "redemption_id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "asset_owner",
+                    "type": "name"
+                },
+                {
+                    "name": "status",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "settr",
+            "base": "",
+            "fields": [
+                {
+                    "name": "new_token_receiver",
+                    "type": "name"
+                }
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "name": "accept",
+            "type": "accept",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "init",
+            "type": "init",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "logredeem",
+            "type": "logredeem",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "markpaid",
+            "type": "markpaid",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "markreceived",
+            "type": "markreceived",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "markshipped",
+            "type": "markshipped",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "settr",
+            "type": "settr",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [
+        {
+            "name": "config",
+            "type": "config_s",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "redemption",
+            "type": "redemption_s",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "kv_tables": {},
+    "ricardian_clauses": [],
+    "variants": [],
+    "action_results": []
+}
